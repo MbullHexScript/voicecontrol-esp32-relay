@@ -3,12 +3,12 @@
 #include "SinricProSwitch.h"
 
 // ================= SINRIC =================
-#define APP_KEY       "f8daa243-1baa-45b0-ba75-f3272aaa41c4"
-#define APP_SECRET    "ceb76fb4-f15b-4b5e-b641-90a86d0255e6-6f3fbd20-13f1-4ff6-b64c-640d67aece02"
+#define APP_KEY       "masukan app_key sinric pro"
+#define APP_SECRET    "masukan app_secret sinric pro"
 
 // ================= DEVICE ID = sesuaikan dengan id device di sinric nya =================
-#define DEVICE_ID_1   "6a132ba7977a0619a747ce33" 
-#define DEVICE_ID_2   "6a132b8df9b5f15fa7dda1d2"
+#define DEVICE_ID_1   "6a132ba7977a0619a747ce33 = contoh" 
+#define DEVICE_ID_2   "6a132b8df9b5f15fa7dda1d2 = contoh"
 
 // ================= RELAY PIN = sesuaikan dengan pin yang kalian gunakan =================
 #define RELAY1 32
@@ -24,13 +24,14 @@ struct WiFiCredential {
 };
 // INI JUMLAH WIFI YANG DI MASUKAN KEDALAM ESP32, JIKA INGIN MERUBAH, SESUAIKAN SSID DAN PASSWORDNYA YAAAA!!!!
 const WiFiCredential wifiList[] = {
-  { "DUTASEBLAK",                  "123qwerty"       },
-  { "butuh mah dateng",            "GAKTAULAH"       },
-  { "KKCEI",                       "Ceicoffee"       },
-  { "plsjanganini",                "janganmasukbabi" },
-  { "PT.KOSPING MAJU SEJAHTERA",   "ABALPUQI123"     },
-  { "AnggaHome5G",                 "24102006"        },
-  { "Naufal baik hati",            "opaltampan808"   },
+  { "nama wifi 1", "password wifi 1" },
+  { "nama wifi 2", "password wifi 2" },
+  { "nama wifi 3", "password wifi 3" },
+  { "nama wifi 4", "password wifi 4" },
+  { "nama wifi 5", "password wifi 5" },
+  { "nama wifi 6", "password wifi 6" },
+  { "nama wifi 7", "password wifi 7" },
+//bebas bisa sampai berapapun
 };
 
 const int WIFI_COUNT = sizeof(wifiList) / sizeof(wifiList[0]);
